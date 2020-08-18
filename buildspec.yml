@@ -12,7 +12,7 @@ phases:
       - echo Build started on `date`
       - echo $CODEBUILD_WEBHOOK_TRIGGER
       - echo $CODEBUILD_WEBHOOK_EVENT
-	  - echo $CODEBUILD_WEBHOOK_HEAD_REF
+      - echo $CODEBUILD_WEBHOOK_HEAD_REF
       - |
        if [ "$CODEBUILD_WEBHOOK_EVENT" = "PUSH" ] ; then
            echo $CODEBUILD_WEBHOOK_EVENT
