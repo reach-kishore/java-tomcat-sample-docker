@@ -14,7 +14,7 @@ phases:
       - echo $CODEBUILD_WEBHOOK_EVENT
       - echo $CODEBUILD_WEBHOOK_HEAD_REF
       - |
-       if [ "$CODEBUILD_WEBHOOK_EVENT" = "PUSH" && "$CODEBUILD_WEBHOOK_HEAD_REF" = "refs/heads/master"] ; then
+       if [ "$CODEBUILD_WEBHOOK_EVENT" = "PUSH" ] && ["$CODEBUILD_WEBHOOK_HEAD_REF" = "refs/heads/master"] ; then
            echo $CODEBUILD_WEBHOOK_EVENT
            echo sudheer
        fi
