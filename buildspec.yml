@@ -11,7 +11,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo $CODEBUILD_WEBHOOK_TRIGGER
-	  - echo "event is ::: $CODEBUILD_WEBHOOK_EVENT"
+      - echo "event is ::: $CODEBUILD_WEBHOOK_EVENT"
       - mvn install
   post_build:
     commands:
