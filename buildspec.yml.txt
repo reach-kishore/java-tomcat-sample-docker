@@ -1,1 +1,11 @@
-print("sudheer")
+import boto3
+
+client = boto3.client('sns')
+
+response = client.publish(
+    TopicArn='arn:aws:sns:us-east-2:873944166504:sample',
+    Message='hi',
+    Subject='hi'
+)
+
+print(response)
