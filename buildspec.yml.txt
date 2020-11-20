@@ -1,5 +1,9 @@
 import boto3
 
+import sys
+firstarg=sys.argv[1]
+
+
 client = boto3.client('sns')
 
 response = client.publish(
@@ -8,4 +12,5 @@ response = client.publish(
     Subject='hi'
 )
 
+print(firstarg)
 print(response)
