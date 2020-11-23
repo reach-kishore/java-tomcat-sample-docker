@@ -4,6 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.example</groupId>
   <artifactId>java-tomcat-sample</artifactId>
+         
   <packaging>war</packaging>
   <version>1.0.1</version>
   <name>hello Maven Webapp</name>
